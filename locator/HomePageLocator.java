@@ -11,9 +11,9 @@ public class HomePageLocator {
     public static String TEXT_SUGGEST = "//div[contains(@class,'tt-menu')]//a";
     public static String TEXT_NAME_PRODUCT = "//h3/a";
     public static String TEXT_NO_RESULT = "//p[@class='well']";
-    public static String PRODUCT_1_TAB_1 = "//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//a[text()='Gà 36 - Set Ăn 2 Suất Gà Trọn Gói Siêu Hấp Dẫn']";
-    public static String PRODUCT_2_TAB_1 = "//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//a[text()='555 - Ăn Là Ngấm - Set Bò Nhúng Dấm Cho 4-6 Người']";
-    public static String PRODUCT_3_TAB_1 = "//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//a[text()='Hải Sản Bảo Sơn - Combo Lẩu Thái Hải Sản Dành Cho 3-4 Người']";
+    public static String PRODUCT_1_TAB_1 = "(//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//div[contains(@class,'product-wrapper')])[1]";
+    public static String PRODUCT_2_TAB_1 = "(//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//div[contains(@class,'product-wrapper')])[2]";
+    public static String PRODUCT_3_TAB_1 = "(//a[text()='Deal Nổi bật']/ancestor::div[contains(@class,'tab-style-1')]//div[contains(@class,'product-wrapper')])[4]";
     public static String pricePromotion(int promotion, int n){
         return "(//span[@class='price__discount' and text()='-"+promotion+"%']/preceding-sibling::span[@class='price__value'])["+n+"]";
     }

@@ -52,7 +52,7 @@ public class AccountTest {
     @DataProvider
     public Object[][] Authentication() throws Exception {
 
-        Object[][] testObjArray = ReadExcel.getTableArray("src/test/java/hotDeal/vn/util/579B1730.xlsx", "Create Account");
+        Object[][] testObjArray = ReadExcel.getTableArray("src/test/java/hotDeal.vn/util/579B1730.xlsx", "Create Account");
 
         return (testObjArray);
     }
